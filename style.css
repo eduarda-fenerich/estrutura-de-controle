@@ -56,7 +56,7 @@ h1{
 .subtitulo{
     color: var(--cor-texto-secundario);
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /* 5. Estilos dos campos do formulário*/
@@ -64,7 +64,8 @@ input, button{
     width: 100%;
     /* Garante que o padding não afete a largura total */
     box-sizing: border-box;
-    padding: 12px;
+    margin: 10px 0px;
+    padding: 14px;
     font-size: 16px;
     font-family: var(--fonte-principal);
     border-radius: 8px;
