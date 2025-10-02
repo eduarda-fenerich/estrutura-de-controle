@@ -52,10 +52,11 @@ body{
 h1{
     font-weight: 600;
     margin-bottom: 8px;
+    color: purple;
 }
 
 .subtitulo{
-    color: var(--cor-texto-secundario);
+    color: rgb(128, 10, 128);
     margin-top: 0;
     margin-bottom: 30px; 
     /* mudei o margin bottom para 30px era 20px*/
@@ -86,7 +87,7 @@ input:focus{
 button{
     cursor: pointer;
     font-weight: 600;
-    background-color: var(--cor-primaria);
+    background-color: purple;
     color: white;
     border: none;
 }

@@ -11,7 +11,7 @@ function verificarIdade(){
     if(isNaN(idade) || idade < 0){
         menssagem = 'Por favor, insira uma idade válida.';
     }else if(idade < 18){
-        menssagem = 'VOcê é menor de idade.';
+        menssagem = 'Você é menor de idade.';
     }else if(idade < 60){
         menssagem = 'Você é adulto.';
     }else{
@@ -108,8 +108,8 @@ function conectar(){
         
             // se a distância for menor que um certo valor, desenha uma linha
             if(distancia < (canvas.width/7) * (canvas.height/7)){
-                ctx.strokeStyle = `rgba(0, 123, 255, ${1 - (distancia/20000)})`;
-                ctx.lineWidth = 1;
+                ctx.strokeStyle = `rgba(160, 32, 240, ${1 - (distancia/20000)})`;
+                ctx.lineWidth = 2;
                 ctx.beginPath();
                 ctx.moveTo(particulasArray[a].x, particulasArray[a].y);
                 ctx.lineTo(particulasArray[b].x, particulasArray[b].y);
@@ -120,7 +120,7 @@ function conectar(){
 }
 
 // loop de animação
-function animar(){
+function animar(){ 
     requestAnimationFrame(animar);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     //  limpa o canvas a cada frame
